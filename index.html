@@ -870,33 +870,38 @@
             </div>
           </div>
 
-          <form action="" class="contact__form grid">
+          <form action="" class="contact__form grid" action="" autocomplete="off" id="form">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label for="" class="contact__label">Name: </label>
-                <input type="text" class="contact__input">
+                <label for="nombre" class="contact__label">Nombre: </label>
+                <input type="text" class="contact__input" id="nombre" name="nombre" required>
               </div>
               <div class="contact__content">
-                <label for="" class="contact__label">Email: </label>
-                <input type="email" class="contact__input">
+                <label for="email" class="contact__label">Email: </label>
+                <input type="email" class="contact__input" id="email" name="email" required>
               </div>
             </div>
             <div class="contact__content">
-              <label for="" class="contact__label">Asunto: </label>
-              <input type="text" class="contact__input">
-            </div>
+                <label for="phone" class="contact__label">Teléfono: </label>
+                <input type="number" class="contact__input" id="phone">
+            </div>            
             <div class="contact__content">
-              <label for="" class="contact__label">Mensaje: </label>
-              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+              <label for="mensaje" class="contact__label">Mensaje: </label>
+              <textarea name="" id="mensaje" name="mensaje" cols="0" rows="7" class="contact__input" required></textarea>
             </div>
 
             <div>
-              <a href="#" class="button button--flex">
+              <!-- <a href="#" class="button button--flex">
                 Enviar Mensaje
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </a> -->
+              <button class="button button--flex" type="submit" name="submit" >
+                Enviar Mensaje
+                <i class="uil uil-message button__icon"></i>
+              </button>
             </div>
           </form>
+          <a href="mailto:bg6907992@gmail.com" id="trucazo">mail</a>
         </div>
       </section>
     </main>
